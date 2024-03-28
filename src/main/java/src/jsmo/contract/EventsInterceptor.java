@@ -1,4 +1,4 @@
-package osrc.jsmo.contract;
+package src.jsmo.contract;
 
 public interface EventsInterceptor {
     void OnMessageReceived();

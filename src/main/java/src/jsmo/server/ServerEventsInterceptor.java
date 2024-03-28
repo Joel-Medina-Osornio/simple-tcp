@@ -1,7 +1,7 @@
-package osrc.jsmo.server;
+package src.jsmo.server;
 
-import osrc.jsmo.contract.EventsInterceptor;
-import osrc.jsmo.contract.MessageDelivery;
+import src.jsmo.contract.EventsInterceptor;
+import src.jsmo.contract.MessageDelivery;
 
 import java.net.ServerSocket;
 import java.net.Socket;

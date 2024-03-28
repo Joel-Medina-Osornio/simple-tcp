@@ -1,8 +1,8 @@
-package osrc.jsmo.server;
+package src.jsmo.server;
 
-import osrc.jsmo.contract.EventsInterceptor;
-import osrc.jsmo.contract.Connection;
-import osrc.jsmo.model.TCPConfiguration;
+import src.jsmo.contract.EventsInterceptor;
+import src.jsmo.contract.Connection;
+import src.jsmo.model.TCPConfiguration;
 
 import java.net.ServerSocket;
 import java.net.Socket;

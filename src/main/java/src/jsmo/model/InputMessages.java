@@ -1,4 +1,4 @@
-package osrc.jsmo.model;
+package src.jsmo.model;
 
 public class InputMessages {
 }
