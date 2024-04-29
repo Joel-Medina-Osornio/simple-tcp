@@ -1,6 +1,9 @@
 package src.jsmo.contract;
 
+import src.jsmo.model.ConnectionResult;
+import src.jsmo.model.DisconnectionResult;
+
 public interface Connection {
-    void Connect() throws Exception;
-    void Disconnect() throws Exception;
+    ConnectionResult Connect();
+    DisconnectionResult Disconnect() throws Exception;
 }
