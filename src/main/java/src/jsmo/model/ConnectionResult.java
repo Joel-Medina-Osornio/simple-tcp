@@ -20,6 +20,6 @@ public class ConnectionResult {
     }
 
     public boolean isSuccesful(){
-        return isSuccesful;
+        return isSuccesful
     }
 }
