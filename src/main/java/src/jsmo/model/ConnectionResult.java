@@ -3,11 +3,11 @@ package src.jsmo.model;
 public class ConnectionResult {
 
     private static final String CONNECTION_RESULT_IS_OK = "ok";
-    private final boolean isSuccesful;
+    private final boolean IS_SUCCESSFUL;
     private final String message;
 
-    private ConnectionResult(boolean isSuccesful, String message){
-        this.isSuccesful = isSuccesful;
+    private ConnectionResult(boolean isSuccessful, String message){
+        this.IS_SUCCESSFUL = isSuccessful;
         this.message = message;
     }
 
@@ -19,7 +19,7 @@ public class ConnectionResult {
         return new ConnectionResult(false, exception.getMessage());
     }
 
-    public boolean isSuccesful(){
-        return isSuccesful;
+    public boolean isIS_SUCCESSFUL(){
+        return IS_SUCCESSFUL;
     }
 }

@@ -25,7 +25,7 @@ public class Server implements Connection {
     public static void main(String[] args) {
         Server server = new Server(null);
         ConnectionResult serverConnectionResult = server.Connect();
-        if (serverConnectionResult.isSuccesful()){
+        if (serverConnectionResult.isIS_SUCCESSFUL()){
 
         }
 
