@@ -19,7 +19,7 @@ public class ConnectionResult {
         return new ConnectionResult(false, exception.getMessage());
     }
 
-    public boolean isIS_SUCCESSFUL(){
+    public boolean connectionStatus(){
         return IS_SUCCESSFUL;
     }
 }

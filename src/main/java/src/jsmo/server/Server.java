@@ -24,16 +24,14 @@ public class Server implements Connection {
 
     public static void main(String[] args) {
         Server server = new Server(null);
+
         ConnectionResult serverConnectionResult = server.Connect();
-        if (serverConnectionResult.isIS_SUCCESSFUL()){
 
-        }
-
-
+        if (serverConnectionResult.connectionStatus()) {}
     }
 
     @Override
-    public ConnectionResult Connect(){
+    public ConnectionResult Connect() {
         try {
             serverSocket = new ServerSocket(tcpConfiguration.getPort());
             clientSocket = serverSocket.accept();
@@ -52,10 +50,10 @@ public class Server implements Connection {
             serverSocket.close();
             clientSocket.close();
         } catch (IOException e) {
-            return null;
+            return DisconnectionResult.fail(e);
         }
 
-        return null;
+        return DisconnectionResult.successful();
     }
 }
 
