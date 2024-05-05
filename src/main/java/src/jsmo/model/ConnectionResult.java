@@ -1,9 +1,13 @@
 package src.jsmo.model;
 
+import lombok.Getter;
+
 public class ConnectionResult {
 
     private static final String CONNECTION_RESULT_IS_OK = "ok";
     private final boolean IS_SUCCESSFUL;
+
+    @Getter
     private final String message;
 
     private ConnectionResult(boolean isSuccessful, String message){
